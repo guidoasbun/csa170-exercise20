@@ -1,6 +1,6 @@
 /*
  *  Guido Asbun
- * 
+ *
  */
 
 
@@ -33,9 +33,10 @@ public class VoidMethods
 
         //***************** Your code goes in this section below *****************
         // Write your 13 method calls under the 13 comments below, respectively.
+        print(array1);
 
         // Call method printLargest for array1.
-
+        printLargest(array1);
 
         // Call method printLargest for array2.
 
@@ -84,20 +85,33 @@ public class VoidMethods
     // Definition of method print
     // Your code here...
 
-
-
-
+    public static void print(int[] array) {
+        System.out.print("Array: ");
+        for(int element: array){
+            System.out.print(element + " ");
+        }
+    }
 
     // Definition of method printLargest
     // Your code here...
 
-
-
+    public static void printLargest(int[] array) {
+        int largest = array[0];
+        System.out.print("\nLargest element: ");
+        for(int element: array){
+            if (largest < element) {
+                largest = element;
+            }
+        }
+        System.out.print(largest);
+    }
 
 
     // Definition of method printAllEvens
     // Your code here...
+    public static void printAllEvens(int[] array, int length){
 
+    }
 
 
 
