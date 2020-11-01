@@ -33,27 +33,31 @@ public class VoidMethods
 
         //***************** Your code goes in this section below *****************
         // Write your 13 method calls under the 13 comments below, respectively.
-        print(array1);
-
         // Call method printLargest for array1.
-        printLargest(array1);
+        print(array1, numOfElem1);
+        printLargest(array1, numOfElem1);
 
         // Call method printLargest for array2.
-
+        print(array2, numOfElem2);
+        printLargest(array2, numOfElem2);
 
         // Call method printLargest for array3.
-
+        print(array3, numOfElem3);
+        printLargest(array3, numOfElem3);
 
         System.out.println();
 
         // Call method printAllEvens for array1.
-
+        print(array1, numOfElem1);
+        printAllEvens(array1, numOfElem1);
 
         // Call method printAllEvens for array2.
-
+        print(array2, numOfElem2);
+        printAllEvens(array2, numOfElem2);
 
         // Call method printAllEvens for array3.
-
+        print(array3, numOfElem3);
+        printAllEvens(array3, numOfElem3);
 
         System.out.println();
 
@@ -85,22 +89,22 @@ public class VoidMethods
     // Definition of method print
     // Your code here...
 
-    public static void print(int[] array) {
-        System.out.print("Array: ");
-        for(int element: array){
-            System.out.print(element + " ");
+    public static void print(int[] array,int length) {
+        System.out.print("\nArray: ");
+        for(int i = 1; i < length; i++){
+            System.out.print(array[i] + " ");
         }
     }
 
     // Definition of method printLargest
     // Your code here...
 
-    public static void printLargest(int[] array) {
+    public static void printLargest(int[] array, int length) {
         int largest = array[0];
         System.out.print("\nLargest element: ");
-        for(int element: array){
-            if (largest < element) {
-                largest = element;
+        for(int i = 1; i < length; i++){
+            if (largest < array[i]) {
+                largest = array[i];
             }
         }
         System.out.print(largest);
@@ -110,11 +114,13 @@ public class VoidMethods
     // Definition of method printAllEvens
     // Your code here...
     public static void printAllEvens(int[] array, int length){
-
+        System.out.print("\nEven numbers: ");
+        for(int i = 0; i < length; i++){
+            if(array[i] % 2 == 0){
+                System.out.print(array[i] + " ");
+            }
+        }
     }
-
-
-
 
     // Definition of method printSum
     // Your code here...
