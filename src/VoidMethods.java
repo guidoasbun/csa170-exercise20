@@ -152,7 +152,7 @@ public class VoidMethods
         if(!isInArray){
             System.out.print(searchNum + " is not in the array.");
         }else{
-            System.out.print(searchNum + " in in the array.");
+            System.out.print(searchNum + " is in the array.");
         }
     }
 
